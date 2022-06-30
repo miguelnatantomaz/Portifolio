@@ -8,5 +8,10 @@ export default {
     title: "Lato-Bold",
     text: "Ubuntu-Light",
   },
+  ButtonSize: {
+    small: "8px 12px",
+    default: "8px 16px",
+    large: "12px 24px",
+  },
   fontSize: {},
 };
