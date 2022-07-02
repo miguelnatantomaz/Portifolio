@@ -2,7 +2,9 @@ export default {
   colors: {
     primary: "#12B629",
     secondary: "#E3E3E3",
+    third: "#2c2c2c",
     shape: "#FFFFFF",
+    header: "#0a0a0a",
   },
   fonts: {
     title: "Lato-Bold",
