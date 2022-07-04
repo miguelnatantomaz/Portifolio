@@ -32,6 +32,11 @@ export const ThemeButton = styled.button`
           :hover::after {
             width: 100%;
           }
+
+          :hover {
+            transition: 0.5s;
+            color: ${({ theme }) => theme.colors.primary};
+          }
         `;
       default:
         return css`
@@ -41,7 +46,7 @@ export const ThemeButton = styled.button`
           border-radius: 20px;
 
           :hover {
-            background-color: ${({ theme }) => theme.colors.secondary};
+            background-color: ${({ theme }) => theme.colors.header};
             color: ${({ theme }) => theme.colors.primary};
           }
         `;
