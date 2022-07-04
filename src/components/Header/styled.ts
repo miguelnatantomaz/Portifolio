@@ -9,6 +9,14 @@ export const HeaderContainer = styled.header`
         box-shadow: 3px -5px 40px 4px rgba(255, 255, 255, 0.58);
         -webkit-box-shadow: 3px -5px 40px 4px rgba(255, 255, 255, 0.3);
         -moz-box-shadow: 3px -5px 40px 4px rgba(255, 255, 255, 0.25);
+
+        @media (max-width: 1024px) {
+          button {
+            transition: 2s;
+            padding: 0px 10px;
+            border-bottom: 2px solid ${({ theme }) => theme.colors.shape};
+          }
+        }
       `;
     } else {
       return css`
@@ -30,27 +38,35 @@ export const HeaderContainer = styled.header`
     align-items: center;
 
     img {
-      width: 150px;
-      height: 120px;
+      width: 120px;
+      height: 100px;
       cursor: pointer;
     }
 
     div {
       display: flex;
       align-items: center;
-
-      svg {
-        cursor: pointer;
-        color: white;
-        :hover {
-          transition: 0.1s;
-          transform: scale(1.1);
-        }
-      }
     }
 
     button {
       margin: 0px 20px;
+    }
+
+    @media (max-width: 1024px) {
+      justify-content: center;
+      padding: 32px 0px;
+      transition: 2s;
+
+      img {
+        display: none;
+      }
+    }
+    @media (max-width: 478px) {
+      div {
+        button {
+          margin: 0 5px;
+        }
+      }
     }
   }
 `;

@@ -4,8 +4,10 @@ import { ButtonHeader } from "../Button";
 import logo from "./../../assets/images/logo.png";
 
 import { HeaderContainer } from "./styled";
+import { animateScroll as scroll } from "react-scroll";
 
-import { LinkedinLogo, GithubLogo } from "phosphor-react";
+import * as Scroll from "react-scroll";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [header, newHeader] = useState(false);
@@ -24,14 +26,17 @@ const Header = () => {
     <>
       <HeaderContainer headerActive={header}>
         <nav>
-          <img src={logo}></img>
+          <img src={logo} onClick={() => scroll.scrollToTop()}></img>
           <div className="buttons">
-            <ButtonHeader>Sobre</ButtonHeader>
-            <ButtonHeader>Tecnologias</ButtonHeader>
-            <ButtonHeader>Portfólio</ButtonHeader>
-            <ButtonHeader>Contato</ButtonHeader>
-            <LinkedinLogo size={32} />
-            <GithubLogo size={32} />
+            <Link to="aboutMe" smooth={true} duration={1000}>
+              <ButtonHeader>Sobre</ButtonHeader>
+            </Link>
+            <Link to="technology" smooth={true} duration={1000}>
+              <ButtonHeader>Tecnologias</ButtonHeader>
+            </Link>
+            <Link to="projects" smooth={true} duration={1000}>
+              <ButtonHeader>Projetos</ButtonHeader>
+            </Link>
           </div>
         </nav>
       </HeaderContainer>
