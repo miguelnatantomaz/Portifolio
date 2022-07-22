@@ -1,4 +1,4 @@
-import { LinkedinLogo, GithubLogo } from "phosphor-react";
+import { LinkedinLogo, GithubLogo, WhatsappLogo} from "phosphor-react";
 import { Container } from "./styles";
 
 const SocialMedias = () => {
@@ -10,14 +10,19 @@ const SocialMedias = () => {
           rel="noreferrer"
           target="_blank"
         >
-          <LinkedinLogo size={48} />
+          <LinkedinLogo size={38} />
         </a>
         <a
           href="https://github.com/miguelnatantomaz"
           rel="noreferrer"
           target="_blank"
         >
-          <GithubLogo size={48} />
+          <GithubLogo size={38} />
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=5541996555095"
+          rel="noreferrer"
+          target="_blank">
+          <WhatsappLogo size={38} />
         </a>
       </Container>
     </>

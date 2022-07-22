@@ -14,7 +14,7 @@ const AboutMe = () => {
         <h2>Sobre</h2>
         <div>
           <ContainerHistory>
-            <h3>Minha motivação</h3>
+            <h3>Sobre mim</h3>
             <p>{aboutMe.message}</p>
           </ContainerHistory>
           <span id="technology"></span>

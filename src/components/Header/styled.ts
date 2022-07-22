@@ -7,16 +7,8 @@ export const HeaderContainer = styled.header`
       return css`
         background-color: ${({ theme }) => theme.colors.header};
         box-shadow: 3px -5px 40px 4px rgba(255, 255, 255, 0.58);
-        -webkit-box-shadow: 3px -5px 40px 4px rgba(255, 255, 255, 0.3);
-        -moz-box-shadow: 3px -5px 40px 4px rgba(255, 255, 255, 0.25);
-
-        @media (max-width: 1024px) {
-          button {
-            transition: 2s;
-            padding: 0px 10px;
-            border-bottom: 2px solid ${({ theme }) => theme.colors.shape};
-          }
-        }
+        -webkit-box-shadow: 3px -5px 40px 4px ${({ theme }) => theme.colors.primary};
+        -moz-box-shadow: 3px -5px 40px 4px ${({ theme }) => theme.colors.primary};
       `;
     } else {
       return css`
@@ -29,6 +21,7 @@ export const HeaderContainer = styled.header`
   position: fixed;
   display: flex;
   justify-content: center;
+  z-index: 10;
 
   nav {
     width: 100%;

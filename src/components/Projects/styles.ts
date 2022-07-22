@@ -36,7 +36,7 @@ export const CardProjects = styled.li`
 
   :hover {
     transition: 0.5s;
-    transform: scale(1.1);
+    transform: scale(1.01);
   }
 
   h3 {

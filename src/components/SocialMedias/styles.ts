@@ -11,7 +11,7 @@ export const Container = styled.div`
 
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding: 30px 10px;
+  padding: 20px 5px;
 
   svg {
     cursor: pointer;

@@ -6,7 +6,9 @@ import { IProjects } from "../../Providers/Projects/interface";
 
 const Projects = () => {
   const { projects }: any = useProjects();
-  console.log(projects);
+  
+
+  
 
   return (
     <>
