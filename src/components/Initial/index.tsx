@@ -10,7 +10,7 @@ const Initial = () => {
           <section>
             <h1>Miguel Natan Tomaz</h1>
             <h2>Desenvolvedor</h2>
-            <span>Frontend</span>
+            <span>FullStack</span>
           </section>
         </div>
       </Container>
