@@ -1,4 +1,5 @@
 import { IProjects } from "../../Providers/Projects/interface";
+import { Container } from "../AboutMe/styles";
 import { Button } from "../Button";
 import { Card } from "./styles";
 const CardProject = ({project}: any) => {

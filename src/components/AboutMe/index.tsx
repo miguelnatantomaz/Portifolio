@@ -23,7 +23,10 @@ const AboutMe = () => {
             <section>
               <ul>
                 {technologies.map((tech: Itechnologies) => (
-                  <li key={tech.name}>{tech.name}</li>
+                  <li key={tech.name}>
+                    {tech.name}
+                    {tech.icon}
+                  </li>
                 ))}
               </ul>
             </section>

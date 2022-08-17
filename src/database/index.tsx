@@ -3,7 +3,7 @@ import fivebet from "../assets/images/five-bet.png";
 import towerofhanoi from "../assets/images/tower-of-hanoi.png";
 
 export const technologiesDB = [
-  { name: "JavaScript" },
+  { name: "JavaScript", },
   { name: "ReactJS" },
   { name: "HTML5" },
   { name: "Redux" },

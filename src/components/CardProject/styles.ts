@@ -7,8 +7,7 @@ export const Card = styled.div`
         return css`
         background-image: url(${props.projectImg});
         background-size: cover;
-        
-    `;
+        `;
     }
   }};
   padding: 10rem 0 0;
@@ -19,30 +18,22 @@ export const Card = styled.div`
   &:hover{
     transition: 0.4s;
     transform: scale(1.05);
+    overflow: visible;
+    .card-content{
+      backdrop-filter: brightness(60%);
+      transition: 1000ms;
+      transform: translateX(0);
+    }
   }
 
   &:hover, &:focus-within{
     transform: scale(1.05);
   }
 
-  &:hover .card-content{
-      transform: translateY(0);
-      transition-delay: 300ms;
-  }    
-
-  .card-content > *:not(.card-title) {
-    opacity: 0;
-    transition: opacity 500ms linear
-  }
-
-  &:hover .card-content > *:not(.card-title){
+  &:hover .card-content > *:not(.card-title),
+  &:focus-within .card-content > *:not(.card-title){
     opacity: 1;
-    transition-delay: 600ms;
-  }
-
-  .card-content:hover, &:hover, .card-title:hover{
-    backdrop-filter: brightness(30%);
-    transition: 1300ms;
+    transition-delay: 1000ms; 
   }
 
   .card-content{
@@ -50,12 +41,13 @@ export const Card = styled.div`
     padding: var(--padding);
     background: linear-gradient(
         hsl(0 0% 0% / 0), 
-        hsl(20 0% 0% / 0.3) 20%,
+        hsl(20 0% 0% / 0.3) 50%,
         hsl(0 0% 0% / 1),
     );
     transform: translateY(70%);
     transition: transform 500ms ease;
-    backdrop-filter: brightness(30%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;  
 
     h3 {
     font-family: ${({ theme }) => theme.fonts.title};
@@ -69,7 +61,6 @@ export const Card = styled.div`
         overflow-y: auto;
         color: ${({ theme }) => theme.colors.shape};
         font-family: ${({ theme }) => theme.fonts.text};
-
     }
     button {
         margin: 0px 10px;
@@ -99,3 +90,4 @@ export const Card = styled.div`
   }
 
 `;
+
