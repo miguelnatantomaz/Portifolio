@@ -43,21 +43,5 @@ export const projectsDB = [
     img: towerofhanoi,
     description:
       "É um jogo onde o objetivo é passar todos os discos de um pino (A) para outro qualquer (B ou C), usando um dos pinos como auxiliar, de maneira que um disco maior nunca fique em cima de outro menor.",
-  },
-  {
-    name: "Torre de hanoi",
-    aplication: "https://miguelnatantomaz.github.io/Tower-of-Hanoi/",
-    repository: "https://github.com/miguelnatantomaz/Tower-of-Hanoi",
-    img: towerofhanoi,
-    description:
-      "É um jogo onde o objetivo é passar todos os discos de um pino (A) para outro qualquer (B ou C), usando um dos pinos como auxiliar, de maneira que um disco maior nunca fique em cima de outro menor.",
-  },
-  {
-    name: "Torre de hanoi",
-    aplication: "https://miguelnatantomaz.github.io/Tower-of-Hanoi/",
-    repository: "https://github.com/miguelnatantomaz/Tower-of-Hanoi",
-    img: towerofhanoi,
-    description:
-      "É um jogo onde o objetivo é passar todos os discos de um pino (A) para outro qualquer (B ou C), usando um dos pinos como auxiliar, de maneira que um disco maior nunca fique em cima de outro menor.",
-  },
+  }
 ];

@@ -25,6 +25,7 @@ const Header = () => {
   return (
     <>
       <HeaderContainer headerActive={header}>
+        
         <nav>
           <img src={logo} onClick={() => scroll.scrollToTop()}></img>
           <div className="buttons">
