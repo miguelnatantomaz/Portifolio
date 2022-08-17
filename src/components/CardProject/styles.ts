@@ -63,19 +63,18 @@ export const Card = styled.div`
         color: ${({ theme }) => theme.colors.shape};
         font-family: ${({ theme }) => theme.fonts.text};
 
-
-        .card-description::-webkit-scrollbar {
-        width: 12px;               /* width of the entire scrollbar */
+        ::-webkit-scrollbar {
+            width: 7px;
         }
-
-        .card-description::-webkit-scrollbar-track {
-          background: orange;        /* color of the tracking area */
+        ::-webkit-scrollbar-track-piece {
+            background-color: ${({ theme }) => theme.colors.primary};
+            border-radius: 50px;
         }
-
-        .card-description::-webkit-scrollbar-thumb {
-          background-color: blue;    /* color of the scroll thumb */
-          border-radius: 20px;       /* roundness of the scroll thumb */
-          border: 3px solid orange;  /* creates padding around scroll thumb */
+        /* Cor do indicador de rolagem */
+        ::-webkit-scrollbar-thumb:vertical,
+        ::-webkit-scrollbar-thumb:horizontal {
+          background-color: ${({ theme }) => theme.colors.header};
+          border-radius: 50px;
         }
 
     }
