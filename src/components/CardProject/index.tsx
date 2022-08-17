@@ -5,7 +5,6 @@ const CardProject = ({project}: any) => {
   return (
     <>
         <Card key={project.name} projectImg={project.img}>
-        <div className="card">
           <div className="card-content">
               <h3 className="card-title">{project.name}</h3>
               <p className="card-description">{project.description}</p>
@@ -16,7 +15,6 @@ const CardProject = ({project}: any) => {
                 <Button>Repositório</Button>
               </a>
             </div> 
-          </div>  
         </Card>
     </>
   );
