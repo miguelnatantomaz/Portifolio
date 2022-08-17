@@ -16,12 +16,13 @@ export const Card = styled.div`
   overflow: hidden;
 
   &:hover{
-    transition: 0.4s;
     transform: scale(1.05);
     overflow: visible;
+    transition: 1700ms;
+    
     .card-content{
       backdrop-filter: brightness(60%);
-      transition: 1000ms;
+      transition: 500ms;
       transform: translateX(0);
     }
   }
@@ -37,17 +38,17 @@ export const Card = styled.div`
   }
 
   .card-content{
-    --padding: 0.5em;
+    --padding: 1em;
     padding: var(--padding);
     background: linear-gradient(
         hsl(0 0% 0% / 0), 
         hsl(20 0% 0% / 0.3) 50%,
         hsl(0 0% 0% / 1),
     );
-    transform: translateY(70%);
+    transform: translateY(75%);
     transition: transform 500ms ease;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;  
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;  
 
     h3 {
     font-family: ${({ theme }) => theme.fonts.title};
@@ -61,6 +62,22 @@ export const Card = styled.div`
         overflow-y: auto;
         color: ${({ theme }) => theme.colors.shape};
         font-family: ${({ theme }) => theme.fonts.text};
+
+
+        .card-description::-webkit-scrollbar {
+        width: 12px;               /* width of the entire scrollbar */
+        }
+
+        .card-description::-webkit-scrollbar-track {
+          background: orange;        /* color of the tracking area */
+        }
+
+        .card-description::-webkit-scrollbar-thumb {
+          background-color: blue;    /* color of the scroll thumb */
+          border-radius: 20px;       /* roundness of the scroll thumb */
+          border: 3px solid orange;  /* creates padding around scroll thumb */
+        }
+
     }
     button {
         margin: 0px 10px;
