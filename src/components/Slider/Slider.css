@@ -2,7 +2,15 @@
     padding: 32px;
     width: 100%;
     max-width: 1200px
+
 }
+@media (max-width: 1200px) {
+    .swiper {
+        max-width: 860px
+    
+    }    
+}
+
   
 .swiper-slide {
     display: flex;

@@ -95,7 +95,7 @@ export const Card = styled.div`
        position: absolute;
        height: 3px;
        width: calc(100% + var(--padding));
-       left: calc(var(--padding) * -1);
+       left: calc(var(--padding) * -0.6);
        top: 5;
        bottom: 0;
        background-color: ${({ theme }) => theme.colors.primary};

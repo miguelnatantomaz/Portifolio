@@ -19,6 +19,7 @@ const Projects = () => {
     },
     draggable: projects.length >= 3,
     loop: projects.length >= 3,
+
   }
 
   
