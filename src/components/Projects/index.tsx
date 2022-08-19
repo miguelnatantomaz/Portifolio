@@ -15,9 +15,8 @@ const Projects = () => {
     slidesPerView: projects.length <= 3 ? projects.length : 3,
     navigation: projects.length >= 3,
     pagination: projects.length >= 3 && {
-      clickable: true,
+      clickable: false,
     },
-    draggable: projects.length >= 3,
     loop: projects.length >= 3,
 
   }
