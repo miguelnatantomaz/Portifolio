@@ -57,7 +57,7 @@ export const CardProjects = styled.li`
   }
 
   @media (max-width: 420px) {
-    width: 80%;
+    width: 00%;
     button {
       margin: 0px 2px;
     }

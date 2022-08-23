@@ -9,14 +9,18 @@ export const HeaderContainer = styled.header`
         box-shadow: 3px -5px 40px 4px rgba(255, 255, 255, 0.58);
         -webkit-box-shadow: 3px -5px 40px 4px ${({ theme }) => theme.colors.primary};
         -moz-box-shadow: 3px -5px 40px 4px ${({ theme }) => theme.colors.primary};
+        transform: translateY(0);
+        transition: 1s;
       `;
     } else {
       return css`
-        background-color: transparent;
+        background-color: ${({ theme }) => theme.colors.header};
+        transition: 1s;
+        transform: translateY(-100%);
       `;
     }
   }};
-  transition: 2s;
+  //transition: 2s;
   width: 100%;
   position: fixed;
   display: flex;

@@ -15,13 +15,31 @@ const Projects = () => {
     slidesPerView: projects.length <= 3 ? projects.length : 3,
     navigation: projects.length >= 3,
     pagination: projects.length >= 3 && {
-      clickable: false,
+      clickable: true,
     },
     loop: projects.length >= 3,
+    breakpoints: {
+      300: {
+        slidesPerView: 1,
+        navigation: false,
+        slidesPerGroup: 1,
+      },
+      800: {
+        slidesPerView: 2,
+        navigation: false,
+        slidesPerGroup: 2,
+      },
+      1200: {
+        spaceBetween: 50,
+        slidesPerView: projects.length <= 3 ? projects.length : 3,
+        navigation: projects.length >= 3,
+        pagination: projects.length >= 3 && {
+          clickable: true,
+        },
+      },
+    },
+  };
 
-  }
-
-  
   return (
     <>
       <Container>
@@ -29,12 +47,12 @@ const Projects = () => {
         <h2>Projetos</h2>
         <section>
           <ul>
-          <Slider settings={settings}>
-            {projects.map((project: IProjects) => (
-              <SwiperSlide>
-                <CardProject project={project}/>
-              </SwiperSlide>
-            ))}
+            <Slider settings={settings}>
+              {projects.map((project: IProjects) => (
+                <SwiperSlide>
+                  <CardProject project={project} />
+                </SwiperSlide>
+              ))}
             </Slider>
           </ul>
         </section>
