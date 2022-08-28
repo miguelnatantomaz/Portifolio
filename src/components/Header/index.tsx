@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ButtonHeader } from "../Button";
 import logo from "./../../assets/images/logo.png";
 
-import { HeaderContainer } from "./styled";
+import { HeaderContainer, HeaderDiv } from "./styled";
 import { animateScroll as scroll } from "react-scroll";
 
 import * as Scroll from "react-scroll";
@@ -24,8 +24,8 @@ const Header = () => {
 
   return (
     <>
-      <HeaderContainer headerActive={header}>
-        
+      <HeaderDiv headerActive={header}></HeaderDiv>
+      <HeaderContainer>
         <nav>
           <img src={logo} onClick={() => scroll.scrollToTop()}></img>
           <div className="buttons">

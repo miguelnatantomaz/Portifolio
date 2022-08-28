@@ -2,30 +2,12 @@ import styled, { css } from "styled-components";
 import { headerActiveProp } from "./interface";
 
 export const HeaderContainer = styled.header`
-  ${(props: headerActiveProp) => {
-    if (props.headerActive) {
-      return css`
-        background-color: ${({ theme }) => theme.colors.header};
-        box-shadow: 3px -5px 40px 4px rgba(255, 255, 255, 0.58);
-        -webkit-box-shadow: 3px -5px 40px 4px ${({ theme }) => theme.colors.primary};
-        -moz-box-shadow: 3px -5px 40px 4px ${({ theme }) => theme.colors.primary};
-        transform: translateY(0);
-        transition: 1s;
-      `;
-    } else {
-      return css`
-        background-color: ${({ theme }) => theme.colors.header};
-        transition: 1s;
-        transform: translateY(-100%);
-      `;
-    }
-  }};
-  //transition: 2s;
   width: 100%;
   position: fixed;
   display: flex;
   justify-content: center;
   z-index: 10;
+  height: 100px;
 
   nav {
     width: 100%;
@@ -33,6 +15,7 @@ export const HeaderContainer = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
 
     img {
       width: 120px;
@@ -66,4 +49,30 @@ export const HeaderContainer = styled.header`
       }
     }
   }
+`;
+
+export const HeaderDiv = styled.header`
+  ${(props: headerActiveProp) => {
+    if (props.headerActive) {
+      return css`
+        background-color: ${({ theme }) => theme.colors.header};
+        box-shadow: 3px -5px 40px 4px rgba(255, 255, 255, 0.58);
+        border-bottom: 2px solid ${({ theme }) => theme.colors.primary};
+        transform: translateY(0);
+        transition: 1s;
+      `;
+    } else {
+      return css`
+        background-color: ${({ theme }) => theme.colors.header};
+        transition: 1s;
+        transform: translateY(-100%);
+      `;
+    }
+  }};
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  height: 100px;
 `;
