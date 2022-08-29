@@ -38,7 +38,7 @@ export const Container = styled.div`
       h1 {
         font-family: ${({ theme }) => theme.fonts.title};
         color: ${({ theme }) => theme.colors.secondary};
-        font-size: 32px;
+        font-size: 26px;
       }
       @media (max-width: 644px) {
         span {

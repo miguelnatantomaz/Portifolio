@@ -5,6 +5,7 @@ export default {
     third: "#2c2c2c",
     shape: "#FFFFFF",
     header: "#0a0a0a",
+    hover: "#008000",
   },
   fonts: {
     title: "Lato-Bold",

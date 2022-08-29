@@ -8,7 +8,7 @@ const Initial = () => {
         <div>
           <img src={logo} alt="" />
           <section>
-            <h1>Miguel Natan Tomaz</h1>
+            <h1>Olá, meu nome é Miguel Natan Tomaz 👋</h1>
             <h2>Desenvolvedor</h2>
             <span>FullStack</span>
           </section>

@@ -40,14 +40,14 @@ export const ThemeButton = styled.button`
         `;
       default:
         return css`
-          color: ${({ theme }) => theme.colors.secondary};
-          padding: ${({ theme }) => theme.ButtonSize.default};
+          color: ${({ theme }) => theme.colors.third};
+          padding: ${({ theme }) => theme.ButtonSize.small};
           background-color: ${({ theme }) => theme.colors.primary};
-          border-radius: 20px;
+          border-radius: 10px;
 
           :hover {
-            background-color: ${({ theme }) => theme.colors.header};
-            color: ${({ theme }) => theme.colors.primary};
+            background-color: ${({ theme }) => theme.colors.hover};
+            color: ${({ theme }) => theme.colors.shape};
           }
         `;
     }
