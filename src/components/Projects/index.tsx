@@ -17,6 +17,10 @@ const Projects = () => {
     pagination: projects.length >= 3 && {
       clickable: true,
     },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     loop: projects.length >= 3,
     breakpoints: {
       300: {
