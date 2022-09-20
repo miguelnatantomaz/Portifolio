@@ -26,13 +26,11 @@ const Initial = () => {
   return (
     <>
       <Container>
-        <div>
       <div>    
         <Particles
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
-      canvasClassName="particle"
       options={{particles: {
         number: {
          value: 100,
@@ -101,7 +99,7 @@ const Initial = () => {
          }
         }
        }}}
-    /></div>
+        />
           <img src={logo} alt="" />
           <section>
             <h1>Olá, meu nome é Miguel Natan Tomaz 👋</h1>

@@ -5,18 +5,15 @@ import SocialMedias from "../../components/SocialMedias";
 import Projects from "../../components/Projects";
 import Footer from "../../components/Footer";
 import { Container } from "./styles";
-import CardProject from "../../components/CardProject";
 
 const Homepage = () => {
   return (
     <Container>
       <Header /> 
       <Initial />
-      <div className="components"> 
-        <AboutMe />
-        <SocialMedias />
-        <Projects />
-      </div>
+      <AboutMe />
+      <SocialMedias />
+      <Projects />
       <Footer />
     </Container>
   );
