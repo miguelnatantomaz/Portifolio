@@ -9,7 +9,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
+  
   span {
     font-family: ${({ theme }) => theme.fonts.text};
     color: ${({ theme }) => theme.colors.shape};

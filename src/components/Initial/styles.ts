@@ -5,9 +5,8 @@ export const Container = styled.div`
   display: flex;
   background-image: url(${backgroundInitial});
   justify-content: center;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+
+  background-repeat: repeat;
   width: 100%;
   height: 100vh;
   align-items: center;

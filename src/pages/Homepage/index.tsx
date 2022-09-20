@@ -10,11 +10,13 @@ import CardProject from "../../components/CardProject";
 const Homepage = () => {
   return (
     <Container>
-      <Header />
+      <Header /> 
       <Initial />
-      <AboutMe />
-      <SocialMedias />
-      <Projects />
+      <div className="components"> 
+        <AboutMe />
+        <SocialMedias />
+        <Projects />
+      </div>
       <Footer />
     </Container>
   );
