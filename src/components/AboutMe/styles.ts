@@ -6,6 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color: black;
   #aboutMe {
     margin-bottom: 65px;
   }
@@ -25,7 +26,7 @@ export const Container = styled.div`
     width: 100%;
     max-width: 1200px;
     display: flex;
-
+    z-index: 1;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;

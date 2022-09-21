@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 
   body {
-    background-color: ${({ theme }) => theme.colors.third};
+    background-color: ${({ theme }) => theme.colors.four};
 
     margin: 0px;
     padding: 0px;

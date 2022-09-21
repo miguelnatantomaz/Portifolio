@@ -3,12 +3,8 @@ import backgroundInitial from "./../../assets/images/backgroundInitial.jpg";
 
 export const Container = styled.div`
   display: flex;
-  background-image: url(${backgroundInitial});
   justify-content: center;
-
-  background-repeat: repeat;
   width: 100%;
-  height: 100vh;
   align-items: center;
   div {
     width: 100%;
@@ -16,7 +12,11 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    z-index: 10;
+    opacity: 1;
+    position: absolute;
+    top: 200px;
+    z-index: 0;
     img {
       width: 450px;
     }
@@ -65,4 +65,16 @@ export const Container = styled.div`
       }
     }
   }
+`;
+
+export const ContainerImage = styled.div`
+  display: flex;
+  background-image: url(${backgroundInitial});
+  justify-content: center;
+  background-repeat: repeat;
+  mask-image: linear-gradient(to top, transparent 10%, black);
+  float: inline-start;
+  width: 100%;
+  height: 98vh;
+  align-items: center;
 `;
