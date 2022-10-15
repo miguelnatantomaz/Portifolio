@@ -6,7 +6,7 @@ export default {
     shape: "#FFFFFF",
     header: "#0a0a0a",
     hover: "#008000",
-    four: "black"
+    four: "black",
   },
   fonts: {
     title: "Lato-Bold",

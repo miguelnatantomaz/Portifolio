@@ -7,7 +7,7 @@ type Props = {
 export const ThemeButton = styled.button`
   font-family: ${({ theme }) => theme.fonts.title};
 
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: 0.3s;
 
   ${(props: Props) => {
@@ -42,11 +42,11 @@ export const ThemeButton = styled.button`
         return css`
           color: ${({ theme }) => theme.colors.third};
           padding: ${({ theme }) => theme.ButtonSize.small};
-          background-color: ${({ theme }) => theme.colors.primary};
+          background-color: ${({ theme }) => theme.colors.shape};
           border-radius: 10px;
 
           :hover {
-            background-color: ${({ theme }) => theme.colors.hover};
+            background-color: ${({ theme }) => theme.colors.four};
             color: ${({ theme }) => theme.colors.shape};
           }
         `;

@@ -3,7 +3,7 @@ import fivebet from "../assets/images/five-bet.png";
 import towerofhanoi from "../assets/images/tower-of-hanoi.png";
 
 export const technologiesDB = [
-  { name: "JavaScript", },
+  { name: "JavaScript" },
   { name: "ReactJS" },
   { name: "HTML5" },
   { name: "Redux" },
@@ -43,5 +43,5 @@ export const projectsDB = [
     img: fivebet,
     description:
       "Site de apostas onde é possível visualizar jogos acontecendo em tempo real, e após criar uma conta, ter acesso à dashboard onde é possível fazer apostas, alterar sua senha, consultar o histórico de transações, sistema de afiliados, e colocar uma foto no perfil.",
-  }
+  },
 ];
